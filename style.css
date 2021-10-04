@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url("../images/pattern-background-desktop.svg")
+    hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.card {
+  margin: 10px;
+  width: 35%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card-img img {
+  padding: 0px;
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 40px;
+}
+
+.card-title h1 {
+  margin: 10px;
+
+  font-weight: 900;
+}
+
+.card-text {
+  margin: 20px 0px;
+  padding: 0px 30px;
+}
+
+.card-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 10px;
+}
+
+.plan-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.plan-text h4 {
+  color: hsl(223, 14%, 64%);
+}
+
+.change {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.change a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 600;
+}
+
+.change a:hover {
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+
+.card-payment-button {
+  margin: 10px;
+}
+
+.card-payment-button .btn {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+}
+
+.card-payment-button .btn:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.card-cancel-button .btn {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  background-color: #fff;
+}
+
+.card-cancel-button .btn:hover {
+  
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 60%;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    background: url("../images/pattern-background-mobile.svg")
+      hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+}
